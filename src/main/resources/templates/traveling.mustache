@@ -1,0 +1,22 @@
+
+<!DOCTYPE HTML>
+<html>
+
+<body>
+<div>
+    <form method = "post">
+        <input type = "text" name = "nameUser" placeholder = "Введите Ваше имя">
+        <input type = "text" name = "emailUser" placeholder = "Введите Ваш e-mail">
+        <button type = "submit"> Добавить </button>
+    </form>
+</div>
+<div>Список пользователей</div>
+{{#users}}
+    <tr>
+        <td>{{idUser}}</td>
+        <td>{{nameUser}}</td>
+        <td>{{emailUser}}</td>
+    </tr>
+{{/users}}
+</body>
+</html>
